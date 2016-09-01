@@ -1,0 +1,28 @@
+ <!--
+     Fabio Henrique Alves - 525758
+     Lucas Henrique Santos do Carmo - 530743
+-->
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="mqttws31.js"> </script>
+    <script src="mqtt.js" charset="UTF-8"> </script>
+</head>
+
+<header>
+    <div class="titulo"> Aplicação JavaScript MQTT </div>
+</header>
+<body>
+    <div class="div-botoes">   
+        <button class="btn" onclick="client.connect(options);"> Conectar </button>
+        <button class="btn" onclick="client.subscribe('testtopic/#', {qos: 2}); alert('Subscribed');"> Inscrever-se </button>
+        <button class="btn" onclick="publish('Bem vindo  !','testtopic/bar',2);">Publicar </button>
+        <button class="btn" onclick="client.disconnect();">Desconectar </button>
+    </div>
+        <div id ="messages">  </div>
+</body>
+<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+</html
