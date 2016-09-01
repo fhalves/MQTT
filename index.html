@@ -18,7 +18,7 @@
 <body>
     <div class="div-botoes">   
         <button class="btn" onclick="client.connect(options);"> Conectar </button>
-        <button class="btn" onclick="client.subscribe('testtopic/#', {qos: 2}); alert('Subscribed');"> Inscrever-se </button>
+        <button class="btn" onclick="client.subscribe('testtopic/#', {qos: 2}); alert('Assinatura realizada com sucesso!');"> Assinar </button>
         <button class="btn" onclick="publish('Bem vindo  !','testtopic/bar',2);">Publicar </button>
         <button class="btn" onclick="client.disconnect();">Desconectar </button>
     </div>
